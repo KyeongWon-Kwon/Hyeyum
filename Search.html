@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  
+    <title>Hyeyum 혜윰</title>
+
+	  
+    <link href="css/theme.css" rel="stylesheet" />
+	  
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+	
+	@font-face {font-family : "NEXONLv1Gothic";
+			src : url("fonts/NEXONLv1GothicRegular.ttf") format("truetype");}
+	
+	body {font-family : "NEXONLv1Gothic";}
+</style>
+
+<script type="text/javascript">
+	function filter(){
+		
+		var value,name,item,i;
+		
+		value = document.getElementById("value").value.toUpperCase();
+		item = document.getElementsByClassName("search-item");
+		
+		for(i=0;i<item.length;i++){
+			name = item[i].getElementsByClassName("name");
+			if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+				item[i].style.display = "flex";
+			}
+			else{
+				item[i].style.display = "none";
+			}
+		}
+	}
+</script>
+  </head>
+
+	
+	
+	
+	
+	
+  <body>
+
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container">
+			<a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
+            <div class="text-hye" Onclick="location.href='index.html'" style="cursor:pointer;">Hye</div>
+            <div class="text-yum" Onclick="location.href='index.html'" style="cursor:pointer;">yum</div>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+              <li class="nav-item px-2"><a class="nav-link fw-medium" aria-current="page" href="page/Top/Top.html">Top / T shirt</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="page/Shirt/Shirt.html">Shirt</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="page/Blouse/Blouse.html">Blouse</a></li>
+				<li class="nav-item px-2"><a class="nav-link fw-medium " style="color:gray" href="page/Neat/Neat.html">Neat / Sweater</a></li>
+				<li class="nav-item px-2"><a class="nav-link fw-medium" style="color:gray"  href="page/Neck/Neck.html">Neck Line</a></li>
+            </ul>
+            <form class="ps-lg-5">
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="py-0" id="home">
+        <div class="bg-holder d-sm-block d-md-block" style="background-image:url(background3.png);background-position:right top;background-size:800px 800px;">
+        </div>
+
+		  
+		  
+        <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-md-100">
+            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+              <h1 class="mt-6 mb-sm-4 display-2 lh-sm fs-4 fs-lg-6 fs-xxl-8">Search</h1>
+<div class="pt-3">
+            <form>
+                  <div class="input-group w-xl-75 w-xxl-50 d-flex flex-end-center">
+                    <input class="form-control rounded-pill shadow-lg border-0" onkeyup="filter()" type="text" id="value" placeholder="궁금한 옷 검색하러 가기"><img class="input-box-icon me-2" src="search.png" width="30" alt="" />
+                  </div>
+                </form>
+				<div class="search-item">
+					<span class="name"> </span>
+					<span class="name"> </span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Aloha.html'" style="cursor:pointer;" >
+				  <span class="search-icon">S</span>
+					<span class="name" >Aloha 알로하</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Aran 아란</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Argyle 아가일</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Art.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Art Pattern 아트 패턴</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Asymmetric 애시메트릭</span>
+				</div>
+				
+				<div class="search-item" Onclick="location.href='page/Top/Baggy.html'" style="cursor:pointer;" >
+				  <span class="search-icon">T</span>
+					<span class="name" >Baggy 배기</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Boat 보트</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Bow.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Bow 보</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Bustier.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Bustier 뷔스티에</span>
+				</div>
+				
+				<div class="search-item" Onclick="location.href='page/Blouse/BustierBlo.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Bustier Blouse 뷔스티에 블라우스</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Cadigan 가디건</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Camisole.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Camisole 캐미솔</span>
+				</div>
+				
+				<div class="search-item" Onclick="location.href='page/Blouse/CamisoleBlo.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Camisole Blouse 캐미솔 블라우스</span>
+				</div>
+		
+				<div class="search-item" Onclick="location.href='page/Shirt/Check.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Check 체크</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Cowl 카울</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Crew 크루</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Crop.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Crop 크롭</span>
+				</div>
+				
+				<div class="search-item" Onclick="location.href='page/Shirt/CropShirt.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Crop Shirt 크롭 셔츠</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Denim.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Denim 데님</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Embro.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Embroidery 자수</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Fair Isle 페어 아일</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Frill.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Frill 프릴</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Grecian 그리시안</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Halter.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Halter 홀터</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Halter Neck 홀터넥</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Halter Strap 홀터 스트랩</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Henely 헨리</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Hoodie.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Hoodie 후드</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Illusion 일루션</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Key Hole 키 홀</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Linen.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Linen 린넨</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Net 네트</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Off Shoudler 오프 숄더</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Over.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Over 오버</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Peasant.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Peasant 페전트</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Peplum.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Peplum 페플럼</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Peter.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Peter pan 피터팬 카라</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Plunging 플런징</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Polo.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Polo 폴로</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Puff.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Puff Sleeve 퍼프 슬리브</span>
+				</div>
+	
+			<div class="search-item" Onclick="location.href='page/Blouse/Punching.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Punching 펀칭</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Queen Anne 퀸 앤</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Round 라운드</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Ruffle.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Ruffle 러플</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Sabrina 사브리나</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Sash.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Sash 새시</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/Satin.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">Satin 새틴</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Scoop 스쿱</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Shakers 셰이커</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Shirring.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Shirring 셔링</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Blouse/Smock.html'" style="cursor:pointer;">
+					<span class="search-icon">B</span>
+					<span class="name">Smock 스목</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Spagetti Strap 스파게티 스트랩</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Squre 스퀘어</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Straight 스트레이트</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Surplice 서플리스</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Sweat.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Sweat Shirt 맨투맨</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">Sweet Heart 스위트 하트</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/TShirt.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">T shirt 티셔츠</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Tank.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Tank 탱크</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Tilden 틸던</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Top/Tube.html'" style="cursor:pointer;">
+					<span class="search-icon">T</span>
+					<span class="name">Tube 튜브</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">U Neck 유 넥</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">Ne</span>
+					<span class="name">V Neck 브이 넥</span>
+				</div>
+	
+				<div class="search-item">
+					<span class="search-icon">N</span>
+					<span class="name">Vest 베스트</span>
+				</div>
+	
+				<div class="search-item" Onclick="location.href='page/Shirt/White.html'" style="cursor:pointer;">
+					<span class="search-icon">S</span>
+					<span class="name">White Shirt 와이셔츠</span>
+				</div>
+              </div>
+				
+				
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="py-8">
+	
+      </section>
+
+</main>
+   
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/is.min.js"></script>
+    <script src="js/theme.js"></script>
+
+  </body>
+
+</html>
